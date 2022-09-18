@@ -1,0 +1,44 @@
+name: flutter_clean_architecture_template
+description: This project is a template for use in all projects
+
+# Prevent accidental publishing to pub.dev.
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  get_it: ^7.2.0
+  dio: ^4.0.6
+  pretty_dio_logger: ^1.1.1
+  dartz: ^0.10.1
+  equatable: ^2.0.5
+  logger: ^1.1.0
+  url_launcher: ^6.1.5
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
+  mockserver: ^1.4.0
+  mockito: ^5.3.0
+  build_runner: ^2.2.0
+
+flutter:
+  uses-material-design: true
+
+  # Enable generation of localized Strings from arb files.
+  generate: true
+
+  assets:
+    # Add assets from the images directory to the application.
+    - assets/images/
